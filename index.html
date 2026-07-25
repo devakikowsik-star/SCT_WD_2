@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aether AI - Build and deploy state-of-the-art agentic models with unprecedented speed, security, and scalability. Discover the future of neural orchestration.">
+    <title>Aether AI | Next-Gen Agentic Intelligence Platform</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header id="main-header" class="header">
+        <div class="header-container">
+            <a href="#home" class="logo" id="nav-logo">
+                <div class="logo-icon"></div>
+                <span>Aether<span>AI</span></span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active" id="link-home">Home</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link" id="link-features">Features</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link" id="link-gallery">Showcase</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link" id="link-testimonials">Reviews</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link" id="link-faq">FAQ</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Actions (Theme, CTA, Hamburger) -->
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Light/Dark Theme">
+                    <i data-lucide="moon" class="icon-moon"></i>
+                    <i data-lucide="sun" class="icon-sun"></i>
+                </button>
+                
+                <a href="#contact" class="btn btn-primary btn-nav" id="btn-nav-cta">Get Started</a>
+                
+                <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="background-glow"></div>
+        <div class="grid-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge-container">
+                    <span class="badge" id="hero-badge">v2.4 Platform Release</span>
+                </div>
+                <h1 class="hero-title" id="hero-heading">Build the Future of <span class="text-gradient">Agentic Intelligence</span></h1>
+                <p class="hero-subtitle">Aether AI empowers software teams to orchestrate, deploy, and scale autonomous AI agents with military-grade security and sub-millisecond execution times.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary" id="btn-hero-primary">Launch Console <i data-lucide="arrow-right"></i></a>
+                    <a href="#features" class="btn btn-secondary" id="btn-hero-secondary">Explore Features</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">99.99%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">&lt; 50ms</span>
+                        <span class="stat-label">Latency</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10M+</span>
+                        <span class="stat-label">Agents Ran</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="interactive-card-wrapper">
+                    <div class="glow-card">
+                        <div class="card-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                            <div class="card-title">aether-node-orchestrator.js</div>
+                        </div>
+                        <div class="card-body">
+<pre><code><span class="keyword">const</span> { AetherAgent, Orchestrator } = <span class="string">'@aether/sdk'</span>;
+
+<span class="comment">// Initialize core neural orchestrator</span>
+<span class="keyword">const</span> orchestrator = <span class="keyword">new</span> Orchestrator({
+  <span class="key">region</span>: <span class="string">'neural-us-east'</span>,
+  <span class="key">securityLevel</span>: <span class="string">'quantum-grade'</span>
+});
+
+<span class="comment">// Spin up autonomous operations agent</span>
+<span class="keyword">const</span> agent = <span class="keyword">new</span> AetherAgent({
+  <span class="key">role</span>: <span class="string">'optimization-lead'</span>,
+  <span class="key">allowAction</span>: <span class="keyword">true</span>
+});
+
+<span class="keyword">await</span> orchestrator.deploy(agent);
+console.log(<span class="string">'Agent state: ACTIVE'</span>);</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-header">
+            <h2 class="section-title">Engineered for the <span class="text-gradient">Next Generation</span></h2>
+            <p class="section-subtitle">Discover the powerful toolkit built directly into Aether AI, helping you scale production-ready agent workflows in minutes.</p>
+        </div>
+        <div class="features-grid">
+            <!-- Feature Card 1 -->
+            <div class="feature-card" id="feature-card-1">
+                <div class="feature-icon-box">
+                    <i data-lucide="cpu"></i>
+                </div>
+                <h3>Neural Orchestration</h3>
+                <p>Dynamically route requests through specialized neural nodes that auto-scale based on computational load and model size.</p>
+                <div class="card-glow"></div>
+            </div>
+            <!-- Feature Card 2 -->
+            <div class="feature-card" id="feature-card-2">
+                <div class="feature-icon-box">
+                    <i data-lucide="shield-check"></i>
+                </div>
+                <h3>Quantum-Grade Security</h3>
+                <p>Isolate agent memory spaces using secure enclaves, complete with real-time audit logs and prompt injection shielding.</p>
+                <div class="card-glow"></div>
+            </div>
+            <!-- Feature Card 3 -->
+            <div class="feature-card" id="feature-card-3">
+                <div class="feature-icon-box">
+                    <i data-lucide="zap"></i>
+                </div>
+                <h3>Sub-Millisecond Execution</h3>
+                <p>Run complex multi-agent decision chains on our edge runtime with optimized WebAssembly compilation paths.</p>
+                <div class="card-glow"></div>
+            </div>
+            <!-- Feature Card 4 -->
+            <div class="feature-card" id="feature-card-4">
+                <div class="feature-icon-box">
+                    <i data-lucide="database"></i>
+                </div>
+                <h3>Vector State Syncing</h3>
+                <p>Keep agents contextualized with automatic distributed vector storage sync that coordinates long-term memory across instances.</p>
+                <div class="card-glow"></div>
+            </div>
+            <!-- Feature Card 5 -->
+            <div class="feature-card" id="feature-card-5">
+                <div class="feature-icon-box">
+                    <i data-lucide="git-branch"></i>
+                </div>
+                <h3>Dynamic Routing</h3>
+                <p>Self-correcting agent pipelines that intelligently branch and rollback when output assertions or guardrails fail.</p>
+                <div class="card-glow"></div>
+            </div>
+            <!-- Feature Card 6 -->
+            <div class="feature-card" id="feature-card-6">
+                <div class="feature-icon-box">
+                    <i data-lucide="bar-chart-3"></i>
+                </div>
+                <h3>Deep Agent Insights</h3>
+                <p>Trace every decision, API call, token usage, and planning step taken by your agents with our timeline debugger.</p>
+                <div class="card-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase / Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-header">
+            <h2 class="section-title">Designed to <span class="text-gradient">Visual Perfection</span></h2>
+            <p class="section-subtitle">A sneak peek into the beautiful workspace, visualization tools, and command centers that power Aether AI.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item large" id="gallery-item-1">
+                <img src="assets/dashboard_mockup.png" alt="Aether AI Developer Dashboard Mockup" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Management Hub</span>
+                    <h4>Orchestrator Workspace</h4>
+                    <p>Monitor real-time agent chains, memory allocation, and token consumption graphs.</p>
+                </div>
+            </div>
+            <div class="gallery-item" id="gallery-item-2">
+                <img src="assets/tracing_mockup.png" alt="Trace Timeline View" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Debugging</span>
+                    <h4>Timeline Tracing</h4>
+                    <p>Step-by-step logs of agent reasoning and tool executions.</p>
+                </div>
+            </div>
+            <div class="gallery-item" id="gallery-item-3">
+                <img src="assets/neural_map_mockup.png" alt="Neural Node Mesh Map" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span class="gallery-category">Topology</span>
+                    <h4>Neural Mesh Map</h4>
+                    <p>Visualizing the routing of requests across global node networks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-header">
+            <h2 class="section-title">Approved by <span class="text-gradient">Tech Leaders</span></h2>
+            <p class="section-subtitle">See how pioneering teams are driving engineering velocities with Aether's autonomous agent framework.</p>
+        </div>
+        <div class="testimonials-wrapper">
+            <div class="testimonials-slider" id="testimonials-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card active" data-index="0">
+                    <div class="quote-icon"><i data-lucide="quote"></i></div>
+                    <p class="testimonial-text">"Deploying agents with Aether AI has cut our customer operation bottlenecks by 70%. The sandbox isolation works seamlessly, and the performance is spectacular. It's the SDK we've been waiting for."</p>
+                    <div class="user-info">
+                        <div class="avatar" style="background-color: var(--color-primary-light);">EH</div>
+                        <div>
+                            <h4 class="user-name">Evelyn Harper</h4>
+                            <p class="user-title">VP of Engineering, CoreFlux</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card" data-index="1">
+                    <div class="quote-icon"><i data-lucide="quote"></i></div>
+                    <p class="testimonial-text">"Our previous agent pipelines were unpredictable, slow, and expensive. With Aether AI, the guardrails and self-correcting routers keep agent tasks 100% aligned. The trace logs saved us weeks of debugging."</p>
+                    <div class="user-info">
+                        <div class="avatar" style="background-color: var(--color-secondary);">MK</div>
+                        <div>
+                            <h4 class="user-name">Marcus Kaelen</h4>
+                            <p class="user-title">Lead Architect, Synthetix Corp</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card" data-index="2">
+                    <div class="quote-icon"><i data-lucide="quote"></i></div>
+                    <p class="testimonial-text">"The dashboard is absolute art. Being able to visualize neural meshes and inspect vector memory sync in real-time has completely shifted how our developers build. The latency is practically non-existent."</p>
+                    <div class="user-info">
+                        <div class="avatar" style="background-color: var(--color-accent);">SC</div>
+                        <div>
+                            <h4 class="user-name">Sarah Chen</h4>
+                            <p class="user-title">Director of AI Initiatives, HyperScale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Controls -->
+            <div class="slider-controls">
+                <button class="slider-btn prev" id="slider-prev" aria-label="Previous Testimonial"><i data-lucide="chevron-left"></i></button>
+                <div class="slider-dots" id="slider-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+                <button class="slider-btn next" id="slider-next" aria-label="Next Testimonial"><i data-lucide="chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="section-header">
+            <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+            <p class="section-subtitle">Find answers to common questions about security, integration, pricing, and infrastructure details.</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item" id="faq-item-1">
+                <button class="faq-question">
+                    <span>How does Aether AI guarantee agent security?</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>We run all agent tasks in secure WebAssembly enclaves. Memory and data streams are isolated at the hardware level, preventing multi-tenant leaks. Additionally, our system scans outputs against prompt-injection signatures in real time.</p>
+                </div>
+            </div>
+            <div class="faq-item" id="faq-item-2">
+                <button class="faq-question">
+                    <span>Can we run Aether on-premise or in private clouds?</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, we offer Aether Enterprise which can be deployed in AWS VPC, GCP project, or via Kubernetes helm charts. Contact our enterprise sales team to learn more about setting up your private enclaves.</p>
+                </div>
+            </div>
+            <div class="faq-item" id="faq-item-3">
+                <button class="faq-question">
+                    <span>What models are supported out of the box?</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>We support Gemini 1.5/2.0, OpenAI GPT-4o, Anthropic Claude 3.5, Llama 3, and custom fine-tuned models hosted on Hugging Face or vLLM. Our orchestrator SDK handles formatting and system prompt standardizations automatically.</p>
+                </div>
+            </div>
+            <div class="faq-item" id="faq-item-4">
+                <button class="faq-question">
+                    <span>Is there a free tier available for open source developers?</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Absolutely! The Aether Sandbox is completely free, allowing you to run up to 10 concurrently active agents, standard vector sync, and gives you full access to our visual debugger tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <span class="badge">Get in Touch</span>
+                <h2 class="section-title">Let's build <br>something <span class="text-gradient">epic</span>.</h2>
+                <p>Have questions about scaling agent workflows? Our engineering team is ready to help you architect the perfect setup. Drop us a line.</p>
+                
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="info-icon"><i data-lucide="mail"></i></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>hello@aetherai.tech</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                        <div>
+                            <h4>Our Headquarter</h4>
+                            <p>One World Trade Center, Suite 88, New York, NY</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i data-lucide="phone"></i></div>
+                        <div>
+                            <h4>Call Sales</h4>
+                            <p>+1 (800) 555-AETHER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-box">
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <input type="text" id="form-name" required placeholder=" " class="form-control">
+                        <label for="form-name" class="form-label">Full Name</label>
+                        <span class="error-msg" id="name-error">Please enter your name</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="form-email" required placeholder=" " class="form-control">
+                        <label for="form-email" class="form-label">Work Email</label>
+                        <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                    </div>
+                    <div class="form-group">
+                        <select id="form-role" required class="form-control select-control">
+                            <option value="" disabled selected hidden></option>
+                            <option value="developer">Developer / Engineer</option>
+                            <option value="architect">AI Architect / Researcher</option>
+                            <option value="executive">Tech Executive / Manager</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="form-role" class="form-label select-label">Your Role</label>
+                        <span class="error-msg" id="role-error">Please select your role</span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="form-message" required placeholder=" " class="form-control textarea-control"></textarea>
+                        <label for="form-message" class="form-label">Project Description</label>
+                        <span class="error-msg" id="message-error">Please describe your project</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                        <span class="btn-text">Send Message</span>
+                        <i data-lucide="send" class="btn-icon"></i>
+                        <span class="spinner" id="form-spinner"></span>
+                    </button>
+                    <div class="success-message" id="form-success">
+                        <i data-lucide="check-circle-2"></i> Message received! We'll reply within 2 hours.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <div class="logo-icon"></div>
+                    <span>Aether<span>AI</span></span>
+                </a>
+                <p class="footer-desc">Orchestrating autonomous intelligence for the modern enterprise. Secure, fast, and scalable.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Aether AI Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="Aether AI GitHub"><i data-lucide="github"></i></a>
+                    <a href="#" aria-label="Aether AI LinkedIn"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#gallery">Showcase</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Agent SDK</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Security Audits</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#">API Status</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Subscribe to Dev News</h4>
+                <p>Get bi-weekly updates on agent design patterns and SDK releases.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="dev@company.com" required aria-label="Newsletter Email" id="newsletter-email">
+                    <button type="submit" aria-label="Subscribe"><i data-lucide="arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aether AI Corp. All rights reserved. Built with precision styling.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
