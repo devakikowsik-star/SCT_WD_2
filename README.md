@@ -1,6 +1,6 @@
 # Fluent Glass Calculator
 
-A premium, interactive web calculator designed as a standalone portfolio piece for **Web Development (Task 2)** by Future Interns.
+A premium, interactive web calculator designed as a standalone portfolio piece for **Web Development (Task 2)**.
 
 This application provides a highly polished user experience combining modern UI design (fluent glassmorphism, responsive grids) with robust, safe mathematical execution.
 
